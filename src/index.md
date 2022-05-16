@@ -1,7 +1,7 @@
 ---
 title: "Analyse des brevets liées à l'informatique par ADN"
 subtitle: "Analyse de l’Innovation et Intelligence Technologique"
-author: "Waris Radji, David Kamgang"
+author: "Waris Radji, David Kamgang, Radouane Ouriha"
 date: "2021-06-20"
 ---
 
