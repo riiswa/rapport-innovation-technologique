@@ -7,7 +7,7 @@ date: "2021-06-20"
 
 # Introduction
 
-Dans le cadre du cours d'Analyse de l'Innovation et d'Intelligence Technologique, ce rapport présente le résultat de notre analyse des brevets liées à l'informatique par ADN.
+Dans le cadre du cours d'Analyse de l'Innovation et d'Intelligence Technologique, ce rapport présente le résultat de notre analyse des brevets liées à l'informatique (ou aux ordinateurs) par ADN.
 
 ## Contextualisation
 
