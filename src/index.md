@@ -44,7 +44,7 @@ Bien que cette technologie soit très prometteuse, nous pouvons nous poser la qu
 
 Nous avons principalement utilisé la base de donnée de brevets Orbit qui propose également des outils permettant de fouiller les données relatives aux brevets à travers différents outils statitistiques. Nous extrayons par la suite ces données de la plateforme afin de pouvoir rendre certains graphiques interactifs.
 
-## ^Requête
+## Requête
 
 Les bases de données de brevets permettent la saisie de requête afin de pouvoir filtrer les milliers de brevets qui s'y trouvent. Nous avons choisi de faire la requête à partir de mots clés et de code CPC[^cpc].
 
@@ -91,16 +91,81 @@ Nous pouvons donc conclure que ce marché reste assez imprévisible, mais semble
 
 ## Couverture géographique
 
+Afin de comprendre les dynamiques globales de ce marché, il est intéressant d’observer quels pays y prennent part. Nous pouvons voir les leaders mondiaux dans le domaine du deep learning se dessiner sur le globe ci-dessous :
 
+<iframe src="fig/couvgeo.html" scrolling="no" style="border:none;" seamless="seamless"  height="525" width="100%"></iframe>
 
+Les principaux acteurs (comme dans la pupart des secteurs technologiques)  sont l'Amérique du Nord et la Chine, suivit de très près par le Japon et la Corée. Etonnament la Russie semble assez en retrait par rapport à cette technologie.Cette technologie se dévelope un petit peu dans le monde entier, excepté en Afrique o`u les brevets se font assez rare. Dans le monde nous pouvons voir que le Canada, l'Australie ainsi que l'Allemagne sont assez proches des 300 publications. 
 
+<iframe src="fig/couvgeo2.html" scrolling="no" style="border:none;" seamless="seamless"  height="525" width="100%"></iframe>
 
+## Principaux acteurs
+
+La répartition des brevets dans les différents pays nous donne un aperçu de l’ampleur des enjeux géopolitiques du domaine. Il est donc intéressant d’identifier les acteurs les plus influents du secteur afin de comprendre les stratégies des différents pays, ce que nous pouvons observer dans la figure ci-dessous :
+
+<iframe src="fig/couvactor.html" scrolling="no" style="border:none;" seamless="seamless"  height="525" width="100%"></iframe>
+
+Nous voyons facilement parmis les acteurs du top 15, une forte présence de l'Amérique du de la Chine et du Japon. Concernant la Chine il semble que c'est majoritairement la partie académique qui s'intéresse aux ordinateurs par ADN. Nous pouvons donc pensez que en Amérique et au Japon, les ordianateurs par ADN sont utilisés à des fins industrielles.
+
+Il n'est pas étonnant de voir des acteurs comme IBM ou Intel qui publient régulièrement sur leurs site web leurs avancées sur le domaine techologique des ordinateurs par ADN par le biais d'articles ou de podcast.
+
+La deuxième entreprise du top est Nantero une société américaine qui a notamment créer la mémoire NRAM un type de [mémoire](https://fr.wikipedia.org/wiki/Mémoire_informatique) d'[ordinateur](https://fr.wikipedia.org/wiki/Ordinateur) [non volatile](https://fr.wikipedia.org/wiki/Mémoire_non_volatile) à l'état de [recherche et développement](https://fr.wikipedia.org/wiki/Recherche_et_développement), propriété de [Nantero](https://fr.wikipedia.org/w/index.php?title=Nantero&action=edit&redlink=1).
+
+Les acteurs sont principalement des institutitions assez grosses ce qui se justifie par l'énorme quantité de ressources (financière et temporelles) nécéssaire à la mise en place de système par ordinateur par ADN. Ce domaine technologique reste est donc principalement réservé à une élite.
+
+### Collaborations entre acteurs
+
+Maintenant que nous avons observé les principaux acteurs du domaine des ordinateurs par ADN, il est possible d'étudiez les différentes collaborations (directes) qu'il y a entre eux pour le dépot du brevet. Le réseaux ci-dessous[^err] présente les collaborations qu'ily a entre les acteurs, les liens sont plus ou moins marqués en fonction du nombre de collaborations qu'il y a entre les acteurs. Pour mieux observez le réseaux, le graphique réprésente les 50 principaux liens.
+
+<img src="fig/actor_network.png">
+
+Il est possible d'observer la formation de certains clusters:
+
+- Les universités chinoises
+- Les universités américaines
+- Samsung electronics et HP
+- Des plus petites entreprises  qui commercialise des micro-controlleurs
+
+[^err]: 
+
+  Il est possible de constater quelque erreurs lors nettoyage des données, en effet certaines affliations ont été mal groupés.
+
+# Les domaines d'applications
+
+Nous avons vu en introduction que les ordinateurs par ADN couvrent de nombreux domaines d'applications. Une de nos missions a été d'identifier ces différents domaines d'applications.
+
+Nous sommes tout d'abord parti de données brutes, c'est à dire les codes CIB/CPC de chacun de nos données. Voici le réseau de l'ensemble de nos codes CIC :
+
+<img src="fig/cic.png">
+
+Ce réseau est assez difficile à interpreter au vu du grands nombre de code CIC. 
+
+A partir de l'ensemble des codes CIC, ainsi que de leurs nombres d'occurence dans le jeu de données. nous avons pu identifier des domaines d'applications à la main. Nous nous sommes intérressés au codes CIC qui apparaissent plus de 25 fois dans le jeu de données. Une table de correspondance nous a ensuite permis d'associé les domaines d'applications aux différents brevets. Voci la carte des domaines technologiques  que nous avons identifiés :
+
+<img src="fig/app.png">
+
+Voici la description des domaines d'applications principaux :
+
+| Domaine d'application       | explication                                                  |
+| --------------------------- | ------------------------------------------------------------ |
+| ADN - STORAGE (879)         | Méthodes de stockage de données numériques dans de l'ADN     |
+| ADN - ELECTRICS (1001)      | Procédés électroniques permettant la mise en place les ordinateurs par ADN |
+| ADN - CHEMISTRY (870        | Procédés chimiques permettant la mise en place les ordinateurs par ADN |
+| ADN - MATERIALS (707)       | Physique des matériaux parmettant notamment le stockage de données numériques dans de l'ADN |
+| ADN - BIO-INFORMATICS (515) | Application informatique des ordinateurs par ADN             |
+| ADN - COMPUTING (732)       | Méthodes de calcul mis en place sur des ordinateurs par ADN  |
+| ADN - MEDICAL               | Application des ordinateurs par ADN dans le domaine médicale |
+
+Une grande partie des domaines concerne la mise en place des ordinateurs par ADN plutôt que leurs utilisation réelle, ce qui peut signifier que c'est encore une technologie en plein essor.
+
+# Conclusion
+
+Bien que les ordinateurs par ADN existent depuis 1994, ça reste un domaine assez prometteur, mais qui dépend énormement des besoins de la sociétés et de ceux de domaines technologiques comme le stockage de données ou le Big Data. Les principaux acteurs se trouvent aux USA et dans certains pays asiatiques (Chine, Japon, Corée), ce qui concorde totalement avec les entreprises et les organismes de recherches  qui publient le plus de brevets. Les organismes de recherches semblent être présent en majorité, ce qui montre que les ordinateurs à ADN ne sont pas encore très utilisés pour des applications réelles. Ce qui se confirme en regardant les domaines d'applications des brevets qui se concentre majoritairement sur les méthodes qui permettent de mettre en place les ordinateurs par ADN. 
+
+Pour répondre à la problématique concernant le futur de cette technologique, bien qu'elle soit super prometteuse sa dépendance à divers domaines d'applications l'empêche d'avoir une popularité constante.  Mais depuis ces dernières années nous pouvons observer plusieurs projets émergeant qui montre des cas d'utilisations pratique de cette technologie. Nous aimerons citer davant de conclure le projet français [**BIOMEMORY**](https://www.biomemory-labs.com/) qui consiste à créer un nouveau moyen de stockage transportable, visant à remplacer les disques de stockages mais capble de stocker 1 millions foit plus de données qu'un SSD. Ce grenre de projet permettent de faire passer cette technologie qui est réservé à des cas d'applications très particuliers, au grand public. C'est ce point qui permettrait peut-être aux ordinateurs par ADN de devenir beaucoup plus populaire dans les futures années.
 
 # Sources:
 
 - [DNA computing](https://en.wikipedia.org/wiki/DNA_computing), From Wikipedia, the free encyclopedia
 - [Digital Revolution](https://en.wikipedia.org/wiki/Digital_Revolution), From Wikipedia, the free encyclopedia
 
-<p class="signoff">
-  <a href="/">↑ Retour en haut</a>
-</p>
